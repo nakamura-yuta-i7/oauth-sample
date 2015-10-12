@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+	<head>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		
+		<!-- Compiled and minified CSS -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+		 <!-- Compiled and minified JavaScript -->
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+		 
+	</head>
+	<body>
+		<h1><%= title %></h1>
+		
+		<% // if(Object.keys(session).length > 0) { %>
+		<% if( false ) { %>
+				<div><img src="<%= session.user.photos[0].value %>"></div>
+				<div><%= session.user.displayName %></div>
+		<% } else { %>
+				<a href="/oauth" class="btn-large waves-effect waves-light" style="text-transform: none;">Twitterでログイン</a>
+		<% } %>
+		
+	</body>
 </html>
