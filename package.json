@@ -1,21 +1,17 @@
 {
   "name": "oauth-sample",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@bitbucket.org:Yuta-Nakamura/oauth-sample.git"
-  },
-  "author": "",
-  "license": "BSD",
   "dependencies": {
-    "express": "~4.13.3",
-    "passport": "~0.3.0",
-    "passport-twitter": "~1.0.3",
-    "express-session": "~1.11.3"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   }
 }
